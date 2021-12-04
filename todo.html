@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css">
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBteWLZWJd3gzhcmoAwkmlmSKN4AdRHlXo",
+    authDomain: "todo-app-d8547.firebaseapp.com",
+    projectId: "todo-app-d8547",
+    storageBucket: "todo-app-d8547.appspot.com",
+    messagingSenderId: "474130289073",
+    appId: "1:474130289073:web:a912348b435a4204b5ad90"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+
+</head>
+
+<body>
+    <div class="todohead">
+    <div id="heading">
+        <h2>TO DO LIST APP</h2>
+    </div>
+    
+
+
+    <div id="mnindiv">
+        <input id="input" type="text"><button class="btnn" onclick="addtodo()">Add item</button><button
+            onclick="dletAll()" class="btnn">Delet All</button>
+
+
+    </div>
+    <ol id="list"></ol>
+</div>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
